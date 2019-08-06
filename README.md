@@ -38,7 +38,7 @@ On RedHat you get the necessaries with:
 
 On Ubuntu / Debian with:
 
-    apt-get install perl unzip
+    apt install perl unzip build-essential
 
 On Solaris you may need the C compiler from Solaris Studio and gnu-make
 since the installed perl version is probably very old.
@@ -53,10 +53,10 @@ get them from the command line (Terminal app) with:
 With that in place you can now utter:
 
 ```sh
-wget https://github.com/oetiker/znapzend/releases/download/v0.19.0/znapzend-0.19.0.tar.gz
-tar zxvf znapzend-0.19.0.tar.gz
-cd znapzend-0.19.0
-./configure --prefix=/opt/znapzend-0.19.0
+wget https://github.com/oetiker/znapzend/releases/download/v0.19.0/znapzend-0.19.1.tar.gz
+tar zxvf znapzend-0.19.1.tar.gz
+cd znapzend-0.19.1
+./configure --prefix=/opt/znapzend-0.19.1
 ```
 
 If configure finds anything noteworthy, it will tell you about it.  If any
@@ -72,7 +72,7 @@ Optionally (but recommended) put symbolic links to the installed binaries in the
 system PATH.
 
 ```sh
-for x in /opt/znapzend-0.19.0/bin/*; do ln -s $x /usr/local/bin; done
+for x in /opt/znapzend-0.19.1/bin/*; do ln -s $x /usr/local/bin; done
 ```
 
 Packages
